@@ -39,7 +39,7 @@ demo video: https://youtu.be/Uw6ajbODid0
 
 1. Clone the repository 
 ```sh
-git clone https://github.com/nelso0/barbotine-arbitrage-bot # you can also download the zip file
+git clone https://github.com/devsniper000/arbitrage-bot # you can also download the zip file
 ```
 2. Go to the repository you just cloned
 ```sh
