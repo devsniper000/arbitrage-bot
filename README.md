@@ -2,10 +2,6 @@
   <img alt="Barbotine arbitrage bot Logo" height="auto" src="https://i.ibb.co/cgdP6rL/Capture-d-e-cran-2024-07-28-a-15-39-40.png">
   <img alt="Barbotine arbitrage bot Logo" height="auto" src="https://i.ibb.co/wSmHNm8/image.png">
 </p>
-
-[![Twitter @nelsodot](https://img.shields.io/twitter/url/https/twitter.com/nelsorex.svg?style=social&label=%20%40nelsorex)](https://twitter.com/nelsorex)
-[![GitHub @nelso0](https://img.shields.io/github/followers/nelso0?label=follow&style=social)](https://github.com/nelso0)
-
 ## Table of content
 * [Features](#features)
 * [Demo video](#demo)
@@ -18,7 +14,6 @@
  
 ## Features
 
-* Compatible with all [ccxt](https://github.com/ccxt/ccxt) exchanges
 * Ready-to-run
 * Precise at the orderbook level (close to a market-making algorithm)
 * Can work with an unlimited number of exchanges at the same time
@@ -82,7 +77,6 @@ python run.py <mode> [renew-time-minutes] <balance-usdt-to-use> <pair> <exchange
 
 * ```<pair>``` = The pair you wanna arbitrage on.
 
-* ```<exchanges list>``` = the exchanges you want the bot to scan the orderbooks on, among all the [CCXT-compatible exchanges](https://github.com/ccxt/ccxt). From a 2 exchanges minimum, up to an unlimited number. Don't forget to configure the exchanges in [exchange_config.py](exchange_config.py).
 
 Note: as the bot needs to buy assets before getting started (it's necessary in order to operate without transfer between exchanges, read more [here](https://medium.com/@barbotine/how-to-exploit-arbitrage-opportunities-using-python-in-centralized-exchanges-like-binance-or-kucoin-805b5bf7b2f2)), if the pair you have chosen looses in value, you'll end up losing money when rebalancing. To avoid that, I created a delta-neutral feature that places a short order to "hedge" and counterbalance the purchase of coins by the bot. You can enable this feature in [exchange_config.py](exchange_config.py).
 
@@ -97,9 +91,3 @@ with renewal enabled:
 python run.py real 15 1000 SOL/USDT binance,poloniex,kucoin   # run the bot with 1000 USDT on binance phemex and bybit on SOL/USDT, and rebalance every 15 minutes.
 ```
 
-<a name="full-version"/>
-
-## Join the community and get paid version
-
-Community: [barbotine.xyz/discord](https://barbotine.xyz/discord)
-Website: [barbotine.xyz](https://barbotine.xyz)
